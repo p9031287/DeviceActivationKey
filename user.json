@@ -6,6 +6,12 @@
         "Allowoffline": false
     },
     {
+        "device_id": "id",
+        "key": "key",
+        "expirydate": "31-12-2099",
+        "Allowoffline": false
+    },
+    {
         "device_id": "0028a93603c839a9",
         "key": "MEHDI FX",
         "expirydate": "31-12-2099",
