@@ -6,6 +6,12 @@
         "Allowoffline": false
     },
     {
+        "device_id": "id",
+        "key": "key",
+        "expirydate": "31-12-2099",
+        "Allowoffline": false
+    },
+    {
         "device_id": "af0db36baf1a2a7c",
         "key": "monoshi",
         "expirydate": "31-12-2099",
