@@ -6,6 +6,12 @@
         "Allowoffline": false
     },
     {
+        "device_id": "a79a1301b5b0f82e",
+        "key": "esmail",
+        "expirydate": "31-12-2099",
+        "Allowoffline": false
+    },
+    {
         "device_id": "6f23255643d10870",
         "key": "@Esomain",
         "expirydate": "31-12-2099",
