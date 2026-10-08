@@ -6,6 +6,12 @@
         "Allowoffline": false
     },
     {
+        "device_id": "f3806761a8514d4c",
+        "key": "@LOOFI_001",
+        "expirydate": "31-12-2099",
+        "Allowoffline": false
+    },
+    {
         "device_id": "59146c2a66cb8052",
         "key": "Adrian",
         "expirydate": "31-12-2099",
