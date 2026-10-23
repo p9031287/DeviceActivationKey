@@ -1,1 +1,100 @@
+name: Manage Users
 
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "add or delete"
+        required: true
+        type: choice
+        options:
+          - add
+          - delete
+      device_id:
+        description: "Device ID"
+        required: true
+        type: string
+      key:
+        description: "User key (for add)"
+        required: false
+        type: string
+      expirydate:
+        description: "Expiry date DD-MM-YYYY (for add)"
+        required: false
+        type: string
+      Allowoffline:
+        description: "Allow offline"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-users:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update user.json
+        env:
+          OPERATION: ${{ inputs.operation }}
+          DEVICE_ID: ${{ inputs.device_id }}
+          USER_KEY: ${{ inputs.key }}
+          EXPIRYDATE: ${{ inputs.expirydate }}
+          ALLOW_OFFLINE: ${{ inputs.Allowoffline }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+
+          path = "user.json"
+          with open(path, "r", encoding="utf-8") as f:
+              users = json.load(f)
+
+          operation = os.environ["OPERATION"]
+          device_id = os.environ["DEVICE_ID"]
+
+          if not isinstance(users, list):
+              sys.exit("user.json must contain a JSON array")
+
+          if operation == "add":
+              if any(u.get("device_id") == device_id for u in users):
+                  sys.exit("This device_id already exists")
+
+              key = os.environ.get("USER_KEY", "")
+              expiry = os.environ.get("EXPIRYDATE", "")
+              if not key or not expiry:
+                  sys.exit("For add, key and expirydate are required")
+
+              users.append({
+                  "device_id": device_id,
+                  "key": key,
+                  "expirydate": expiry,
+                  "Allowoffline": os.environ.get("ALLOW_OFFLINE", "false").lower() == "true"
+              })
+
+          elif operation == "delete":
+              old_count = len(users)
+              users = [u for u in users if u.get("device_id") != device_id]
+              if len(users) == old_count:
+                  sys.exit("device_id not found")
+
+          else:
+              sys.exit("Invalid operation")
+
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(users, f, ensure_ascii=False, indent=2)
+              f.write("\n")
+          PY
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add user.json
+          git diff --cached --quiet || git commit -m "Manage users"
+          git push
