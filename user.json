@@ -93,7 +93,7 @@
     "device_id": "cb31ed7873add4bf",
     "key": "@xxxhhhix",
     "expirydate": "31-12-2099",
-    "Allowoffline": false
+    "Allowoffline": true
   },
   {
     "device_id": "02eadc0cd3549563",
