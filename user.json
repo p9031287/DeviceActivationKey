@@ -358,5 +358,11 @@
     "key": "shardcore007",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "d95a707cc865672a",
+    "key": "mamadox_1",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
