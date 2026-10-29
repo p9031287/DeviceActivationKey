@@ -346,5 +346,11 @@
     "key": "shardcore007",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "753993d216143c9a",
+    "key": "Tiam1234",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
