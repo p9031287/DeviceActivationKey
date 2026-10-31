@@ -352,5 +352,11 @@
     "key": "mamadox_1",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "26c1b2c729110421",
+    "key": "Dash",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
