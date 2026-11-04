@@ -364,5 +364,11 @@
     "key": "amir0090rx4@gmail.com",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "8ad2986a8c1c0477",
+    "key": "AlBanana",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
