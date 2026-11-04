@@ -370,5 +370,11 @@
     "key": "AlBanana",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "26c1b2c729110421",
+    "key": "Hassan",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
