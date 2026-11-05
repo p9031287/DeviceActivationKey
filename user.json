@@ -376,5 +376,11 @@
     "key": "Hassan",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "65b5f42bc3551888",
+    "key": "Vanton001",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
