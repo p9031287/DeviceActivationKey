@@ -382,5 +382,11 @@
     "key": "Vanton001",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "97bde792cfb3d1be",
+    "key": "lIlI_85_IlIl",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
