@@ -388,5 +388,11 @@
     "key": "lIlI_85_IlIl",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "f8d6ba46fae70be2",
+    "key": "BENi_2020",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
