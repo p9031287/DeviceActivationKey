@@ -394,5 +394,11 @@
     "key": "BENi_2020",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "46b3af1f562b27e8",
+    "key": "amirali2255",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
