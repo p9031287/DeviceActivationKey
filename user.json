@@ -406,5 +406,11 @@
     "key": "Arshialolo",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "5a5adad63b48caba",
+    "key": "DCBA55UI",
+    "expirydate": "31-12-2099",
+    "Allowoffline": false
   }
 ]
