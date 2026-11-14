@@ -406,11 +406,5 @@
     "key": "Arshialolo",
     "expirydate": "31-12-2099",
     "Allowoffline": false
-  },
-  {
-    "device_id": "5a5adad63b48caba",
-    "key": "ABCD44UI",
-    "expirydate": "31-12-2099",
-    "Allowoffline": false
   }
 ]
