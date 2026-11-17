@@ -405,6 +405,6 @@
     "device_id": "2885ee6dd5d84e5e",
     "key": "power0993",
     "expirydate": "31-12-2099",
-    "Allowoffline": true
+    "Allowoffline": false
   }
 ]
