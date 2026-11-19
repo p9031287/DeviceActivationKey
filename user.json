@@ -400,5 +400,11 @@
     "key": "power0993",
     "expirydate": "31-12-2099",
     "Allowoffline": false
+  },
+  {
+    "device_id": "d66d0e253b582586",
+    "key": "mohamad1324",
+    "expirydate": "25-08-2099",
+    "Allowoffline": true
   }
 ]
