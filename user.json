@@ -418,11 +418,5 @@
     "key": "ElvaTest",
     "expirydate": "25-08-2099",
     "Allowoffline": true
-  },
-  {
-    "device_id": "437f4dcf23b1c300",
-    "key": "homayoon1383",
-    "expirydate": "25-08-2099",
-    "Allowoffline": true
   }
 ]
