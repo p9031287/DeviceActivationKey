@@ -424,5 +424,11 @@
     "key": "aminsprzz26",
     "expirydate": "25-08-2099",
     "Allowoffline": true
+  },
+  {
+    "device_id": "b3728c16ce794406",
+    "key": "ESCOBAR",
+    "expirydate": "25-08-2099",
+    "Allowoffline": true
   }
 ]
